@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>n8n Agente — personal automation</title>
+<meta name="description" content="n8n Agente is a private, single-user automation system run by Luca Marvelli.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Barlow+Semi+Condensed:wght@600&display=swap" rel="stylesheet">
+<style>
+:root { --paper:#EEF2F5; --ink:#1D2A38; --muted:#55677A; --line:#C6D2DC; --signal:#0E7C86; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--paper); color:var(--ink); font:400 1.0625rem/1.6 "Barlow","Segoe UI",system-ui,sans-serif; }
+main { max-width:44rem; margin:0 auto; padding:4.5rem 1.5rem 3rem; }
+.mark { width:3rem; height:3rem; border:2px solid var(--ink); display:grid; place-items:center; margin-bottom:2rem; }
+.mark span { width:1rem; height:1rem; background:var(--signal); }
+h1 { font:600 clamp(2.4rem,7vw,3.6rem)/1.05 "Barlow Semi Condensed","Barlow",sans-serif; letter-spacing:-0.01em; margin:0 0 1.25rem; }
+.lead { font-size:1.25rem; max-width:36rem; margin:0 0 2.5rem; }
+h2 { font:600 1.35rem/1.25 "Barlow Semi Condensed","Barlow",sans-serif; margin:2.5rem 0 0.5rem; padding-top:1.25rem; border-top:1px solid var(--line); }
+p, li { max-width:38rem; }
+ul { padding-left:1.2rem; }
+a { color:var(--signal); text-underline-offset:3px; }
+a:focus-visible { outline:2px solid var(--signal); outline-offset:3px; }
+.it { color:var(--muted); }
+footer { max-width:44rem; margin:0 auto; padding:1.5rem; color:var(--muted); font-size:0.9375rem; border-top:1px solid var(--line); }
+</style>
+</head>
+<body>
+<main>
+<div class="mark" aria-hidden="true"><span></span></div>
+<h1>n8n Agente</h1>
+<p class="lead">A private automation system that runs research, reports and monitoring for one person. It is not a public service and has no other users.</p>
+<h2>What it does</h2>
+<ul>
+<li>Collects and compares answers from several AI models on technical questions.</li>
+<li>Saves the resulting reports as documents in the owner's own Google Drive.</li>
+<li>Keeps logs in the owner's own Google Sheets and checks that its services are working.</li>
+</ul>
+<h2>Why it uses Google sign-in</h2>
+<p>The system signs in with the owner's Google account only, to read and write files in that same account. It never accesses anyone else's data.</p>
+<p>Details on how data is handled are in the <a href="privacy.html">privacy policy</a>.</p>
+<h2>Contact</h2>
+<p>Operated by Luca Marvelli, Turin, Italy. Email: <a href="mailto:luca.marvelli@gmail.com">luca.marvelli@gmail.com</a></p>
+<h2 lang="it">In italiano</h2>
+<p class="it" lang="it">n8n Agente è un sistema di automazione privato, usato da una sola persona per ricerche, relazioni e monitoraggio. Accede con l'account Google del proprietario solo per salvare e leggere file nel suo stesso account. Non è un servizio pubblico.</p>
+</main>
+<footer>
+<a href="privacy.html">Privacy policy</a>
+</footer>
+</body>
+</html>
